@@ -15,8 +15,9 @@ Includes SwaggerUI Docs
 ```
 git clone https://github.com/hrudka-matt/apiserver
 cd apiserver
-npm install
-
+python -m venv venv (start vm)
+pip install -r requirements.txt
+pip install uvicorn fastpi httpx pytest
 --API Server
 uvicorn main:app --reload
 
